@@ -1,8 +1,24 @@
+import ProductsCard from "./ProductsCard";
+
 const Products = () => {
   return (
-    <div>
-      <h1>Products</h1>
-    </div>
+    <>
+      <div className="grid grid-cols-4 gap-2">
+        <ProductsCard />
+        <ProductsCard />
+        <ProductsCard />
+        <ProductsCard />
+        <ProductsCard />
+        <ProductsCard />
+        <ProductsCard />
+        <ProductsCard />
+        <ProductsCard />
+        <ProductsCard />
+        <ProductsCard />
+        <ProductsCard />
+        <ProductsCard />
+      </div>
+    </>
   );
 };
 

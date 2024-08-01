@@ -7,7 +7,7 @@ const Navbar = () => {
         <input
           type="text"
           placeholder="Enter your text here..."
-          className="rounded-xl p-2 outline"
+          className="rounded-xl p-2 outline outline-red-600"
         />
       </div>
 

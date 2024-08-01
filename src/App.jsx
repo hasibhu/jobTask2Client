@@ -5,10 +5,10 @@ import Sidebar from "./Sidebar/Sidebar";
 
 function App() {
   return (
-    <div className="m-2 mx-auto w-[1280px] p-5 bg-slate-300">
-      <div className="flex ">
+    <div className="m-2 mx-auto max-w-screen-xl p-5 bg-slate-300">
+      <div className="flex">
         {/* Sidebar */}
-        <div className="lg:w-2/12 fixed top-1/2 left-0 h-full ml-10">
+        <div className="w-2/12 sticky top-1/2 mt-60 h-screen">
           <Sidebar />
         </div>
 

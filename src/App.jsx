@@ -1,7 +1,13 @@
+import Navbar from "./Navigation/Navbar";
+import Products from "./Products/Products";
+import Recommended from "./Recommended/Recommended";
+
 function App() {
   return (
-    <div>
-      <h1> Hello World</h1>
+    <div className="m-2 mx-auto w-[1080px] p-5">
+      <Navbar></Navbar>
+      <Products></Products>
+      <Recommended></Recommended>
     </div>
   );
 }

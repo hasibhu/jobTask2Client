@@ -52,12 +52,12 @@ function App() {
     }
 
     return filteredProducts.map(
-      ({ img, title, star, reviews, prevPrice, newPrice }) => (
+      ({ img, title, start, reviews, prevPrice, newPrice }) => (
         <ProductsCard
           key={Math.random()} // It's better to use a stable key if possible, like product ID
           img={img}
           title={title}
-          star={star}
+          start={start}
           reviews={reviews}
           prevPrice={prevPrice}
           newPrice={newPrice}
@@ -80,9 +80,11 @@ function App() {
 
         {/* Main Content */}
         <div className="w-10/12 ml-auto">
-          <Navbar />
+          <Navbar query={query} handleInputChange={handleInputChange} />
+
           <div className="overflow-y-auto h-[calc(100vh-4rem)] p-2">
-            <Recommended />
+            <Recommended handleClick={handleClick} />
+
             {filteredData(products, selectedCatergory, query)}
           </div>
         </div>

@@ -7,7 +7,13 @@ const Category = ({ handleRadioChange }) => {
       <h1 className="text-2xl font-bold ">Category</h1>
       <div className="flex flex-col">
         <label>
-          <input type="radio" name="category" id="" />
+          <input
+            onChange={handleRadioChange}
+            type="radio"
+            value=""
+            name="category"
+            id=""
+          />
           <span></span>All
         </label>
 
@@ -21,14 +27,14 @@ const Category = ({ handleRadioChange }) => {
         <Input
           handleRadioChange={handleRadioChange}
           value="flats"
-          title="flats"
+          title="Flats"
           name="category"
         ></Input>
 
         <Input
           handleRadioChange={handleRadioChange}
           value="sandals"
-          title="Sndals"
+          title="Sandals"
           name="category"
         ></Input>
         <Input

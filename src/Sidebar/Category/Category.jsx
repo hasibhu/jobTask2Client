@@ -1,6 +1,7 @@
 import React from "react";
+import Input from "../../components/Input";
 
-const Category = () => {
+const Category = ({ handleRadioChange }) => {
   return (
     <div className="mb-2">
       <h1 className="text-2xl font-bold ">Category</h1>
@@ -9,18 +10,33 @@ const Category = () => {
           <input type="radio" name="category" id="" />
           <span></span>All
         </label>
-        <label>
-          <input type="radio" name="category" id="" />
-          <span></span>Sneakers
-        </label>
-        <label>
-          <input type="radio" name="category" id="" />
-          <span></span>Flats
-        </label>
-        <label>
-          <input type="radio" name="category" id="" />
-          <span></span>Shoes
-        </label>
+
+        <Input
+          handleRadioChange={handleRadioChange}
+          value="sneakers"
+          title="Sneakers"
+          name="category"
+        ></Input>
+
+        <Input
+          handleRadioChange={handleRadioChange}
+          value="flats"
+          title="flats"
+          name="category"
+        ></Input>
+
+        <Input
+          handleRadioChange={handleRadioChange}
+          value="sandals"
+          title="Sndals"
+          name="category"
+        ></Input>
+        <Input
+          handleRadioChange={handleRadioChange}
+          value="heels"
+          title="Heels"
+          name="category"
+        ></Input>
       </div>
     </div>
   );

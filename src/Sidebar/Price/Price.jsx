@@ -1,4 +1,4 @@
-const Price = () => {
+const Price = ({ handleRadioChange }) => {
   return (
     <div className="mb-2">
       <h1 className="text-2xl font-bold ">Price</h1>

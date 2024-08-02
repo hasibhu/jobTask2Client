@@ -3,7 +3,7 @@ import Category from "./Category/Category";
 import Price from "./Price/Price";
 import Colors from "./Colors/Colors";
 
-const Sidebar = () => {
+const Sidebar = ({ handleRadioChange }) => {
   return (
     <div>
       <section>
@@ -11,9 +11,9 @@ const Sidebar = () => {
           <BsCart4 />
         </div>
 
-        <Category></Category>
-        <Price></Price>
-        <Colors></Colors>
+        <Category handleRadioChange={handleRadioChange}></Category>
+        <Price handleRadioChange={handleRadioChange}></Price>
+        <Colors handleRadioChange={handleRadioChange}></Colors>
       </section>
     </div>
   );

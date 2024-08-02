@@ -1,14 +1,11 @@
 import { FaStar } from "react-icons/fa";
 import { IoBagAdd } from "react-icons/io5";
 
-const ProductsCard = () => {
+const ProductsCard = ({ img }) => {
   return (
     <div className="card bg-base-100 w-52 shadow-xl">
       <figure>
-        <img
-          src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
-          alt="Shoes"
-        />
+        <img src={img} alt="Shoes" />
       </figure>
       <div className="card-body">
         <h2 className="card-title">
@@ -16,10 +13,10 @@ const ProductsCard = () => {
           <div className="badge badge-secondary">NEW</div>
         </h2>
         <div className="flex items-center">
-          <FaStar />
-          <FaStar />
-          <FaStar />
-          <FaStar />
+          <FaStar className="text-yellow-500" />
+          <FaStar className="text-yellow-500" />
+          <FaStar className="text-yellow-500" />
+          <FaStar className="text-yellow-500" />
           <h2 className="ml-1">4</h2>
         </div>
 

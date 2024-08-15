@@ -1,4 +1,5 @@
 import React from "react";
+import Login from "./Login";
 
 const Navbar = ({ handleInputChange, query }) => {
   return (
@@ -13,7 +14,7 @@ const Navbar = ({ handleInputChange, query }) => {
       </div>
 
       <div>
-        <h1>Profile</h1>
+        <Login></Login>
       </div>
     </nav>
   );

@@ -5,7 +5,7 @@ import "./index.css";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <div className="w-[1280px] m-auto">
+    <div className="lg:w-[1280px] m-auto">
       <App />
     </div>
   </React.StrictMode>

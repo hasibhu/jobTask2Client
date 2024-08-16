@@ -4,6 +4,7 @@ import Recommended from "./Recommended/Recommended";
 import Sidebar from "./Sidebar/Sidebar";
 import products from "./db/data";
 import Products from "./Products/Products"; // Updated to use Products component
+import Footer from "./Footer/Footer";
 
 function App() {
   const [selectedCategory, setSelectedCategory] = useState(null);
@@ -48,23 +49,26 @@ function App() {
   const filteredProducts = filteredData(products, selectedCategory, query);
 
   return (
-    <div className="m-2 mx-auto max-w-screen-xl p-5 bg-slate-300">
-      <div className="flex">
-        <div className="w-2/12 sticky top-1/2 mt-60 h-screen">
+    <div className="m-2 lg:mx-auto lg:max-w-screen-xl p-5 bg-slate-300">
+      <div className="lg:flex">
+
+        <div className="lg:w-2/12 sticky top-1/2 lg:mt-60 lg:h-screen hidden lg:block ">
           <Sidebar handleRadioChange={handleRadioChange} />
         </div>
 
-        <div className="w-px bg-gray-400 mx-5"></div>
+        <div className="w-px bg-gray-400 mx-5 hidden lg:block"></div>
 
-        <div className="w-10/12 ml-auto">
+        <div className="lg:w-10/12 ml-auto">
           <Navbar query={query} handleInputChange={handleInputChange} />
           <div className="overflow-y-auto h-[calc(100vh-4rem)] p-2">
-            <Recommended handleClick={handleClick} />
+            <Recommended handleClick={handleClick} handleRadioChange={handleRadioChange}/>
             <Products products={filteredProducts} />{" "}
-            {/* Pass filtered products here */}
+           
           </div>
         </div>
       </div>
+
+      <Footer></Footer>
     </div>
   );
 }

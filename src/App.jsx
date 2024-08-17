@@ -150,8 +150,8 @@ const filteredData = (products, selectedCategory, query, selectedPriceRange) => 
                 <label className="mr-2">Sort by Date:</label>
                 <select onChange={handleSortByDateChange} value={sortByDate}>
                   <option value="">Select</option>
-                  <option value="newestFirst">Date Added: Newest First</option>
-                  <option value="oldestFirst">Date Added: Oldest First</option>
+                  <option value="newestFirst"> Newest First</option>
+                  <option value="oldestFirst"> Oldest First</option>
                 </select>
               </div>
             </div>

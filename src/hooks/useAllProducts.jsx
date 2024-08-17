@@ -5,7 +5,7 @@ import axios from "axios";
 const useAllProducts = () => {
 
     // using tanstack query 
-    const { data: products = [],  refetch } = useQuery({
+    const { data: products = [],  refetch, isLoading } = useQuery({
         queryKey: ['users'],
         queryFn: async () => {
             await new Promise(resolve => setTimeout(resolve, 1500));

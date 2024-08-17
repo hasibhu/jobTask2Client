@@ -5,10 +5,11 @@ import { useState } from "react";
 import Navbar from "./Navigation/Navbar";
 import Recommended from "./Recommended/Recommended";
 import Sidebar from "./Sidebar/Sidebar";
-import products from "./db/data"; // Assuming products are ordered by oldest to newest
+// import products from "./db/data"; // Assuming products are ordered by oldest to newest
 import Products from "./Products/Products";
 import Footer from "./Footer/Footer";
 import useAllProducts from "./hooks/useAllProducts";
+// import useAllProducts from "./hooks/useAllProducts";
 
 function App() {
   const [selectedCategory, setSelectedCategory] = useState(null);
@@ -18,11 +19,12 @@ function App() {
   const [sortOrder, setSortOrder] = useState("");
   const [selectedPriceRange, setSelectedPriceRange] = useState(null);
   const [sortByDate, setSortByDate] = useState("");
-
+  const [products, refetch, isLoading] = useAllProducts();
   const handleInputChange = (event) => {
     event.preventDefault();
     setQuery(event.target.value);
   };
+  
 
   const handleRadioChange = (event) => {
     const value = event.target.value;

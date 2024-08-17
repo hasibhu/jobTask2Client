@@ -15,7 +15,7 @@ const Recommended = ({ handleClick, handleRadioChange }) => {
           value=""
           className="btn border-2 border-lime-200 font-bold"
         >
-          All Products
+          All Brands
         </button>
 
         <Button handleClick={handleClick} value="Nike" title="Nike"></Button>

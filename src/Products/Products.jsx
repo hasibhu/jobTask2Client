@@ -1,23 +1,36 @@
-import ProductsCard from "./ProductsCard";
+import React, { useState } from 'react';
+import ProductsCard from './ProductsCard';
+import Modal from './Modal';
 
 const Products = ({ products }) => {
-  
-  return (
-    <div className="grid lg:grid-cols-4 grid-cols-2 gap-1">
-      {" "}
-      {/* Grid with 4 columns */}
+  const [selectedProduct, setSelectedProduct] = useState(null);
 
-      {products.map(({ img, title, start, reviews, prevPrice, newPrice }) => (
-        <ProductsCard
-          key={Math.random()} // Use a stable key, such as product ID or title
-          img={img}
-          title={title}
-          start={start}
-          reviews={reviews}
-          prevPrice={prevPrice}
-          newPrice={newPrice}
+  const openModal = (product) => {
+    setSelectedProduct(product);
+  };
+
+  const closeModal = () => {
+    setSelectedProduct(null);
+  };
+
+  return (
+    <div>
+      <div className="grid lg:grid-cols-4 grid-cols-2 gap-1">
+        {products.map(product => (
+          <ProductsCard
+            key={product.id} // Ensure `product.id` is a unique and stable key
+            {...product}
+            onClick={() => openModal(product)}
+          />
+        ))}
+      </div>
+      
+      {selectedProduct && (
+        <Modal
+          product={selectedProduct}
+          onClose={closeModal}
         />
-      ))}
+      )}
     </div>
   );
 };

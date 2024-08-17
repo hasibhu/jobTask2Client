@@ -4,9 +4,9 @@ import { IoBagAdd } from "react-icons/io5";
 
 const ProductsCard = ({ img, title, start, reviews, prevPrice, newPrice }) => {
   return (
-    <div className="card bg-base-100 lg:w-56  shadow-xl">
+    <div className="card bg-base-100 lg:w-62  shadow-xl">
       <figure>
-        <img className="w-44 h-29" src={img} alt={title} />
+        <img className="w-44 h-42" src={img} alt={title} />
       </figure>
       <div className="card-body">
         <h2 className="card-title">
@@ -33,6 +33,44 @@ const ProductsCard = ({ img, title, start, reviews, prevPrice, newPrice }) => {
 };
 
 export default ProductsCard;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 // break down the expression [{...Array(start)].map((_, index) => ( <AiFillStar key={index} className="text-yellow-500" /> ))} in detail.
 

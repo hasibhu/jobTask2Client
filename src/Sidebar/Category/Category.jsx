@@ -40,13 +40,13 @@ const Category = ({ handleRadioChange }) => {
           name="category"
         ></Input>
 
-        {/* Clothe */}
+        {/* Clothe
         <Input
           handleRadioChange={handleRadioChange}
           value="clothes"
           title="Clothes"
           name="category"
-        ></Input>
+        ></Input> */}
 
         {/* vegetable */}
         <Input

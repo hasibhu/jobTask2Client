@@ -19,9 +19,12 @@ const Recommended = ({ handleClick, handleRadioChange }) => {
         </button>
 
         <Button handleClick={handleClick} value="Nike" title="Nike"></Button>
+        <Button handleClick={handleClick} value="NYX" title="NYX"></Button>
         <Button handleClick={handleClick} value="Adidas" title="Adidas"></Button>
         <Button handleClick={handleClick} value="Puma" title="Puma"></Button>
         <Button handleClick={handleClick} value="Vans" title="Vans"></Button>
+        <Button handleClick={handleClick} value="Fusion" title="Fusion"></Button>
+        <Button handleClick={handleClick} value="Seed King" title="Seed King"></Button>
 
 
       </div>

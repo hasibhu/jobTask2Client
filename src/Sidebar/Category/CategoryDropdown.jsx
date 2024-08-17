@@ -11,10 +11,10 @@ const CategoryDropdown = ({ handleRadioChange }) => {
           className="p-2 border rounded"
         >
           <option value="">All</option>
-          <option value="sneakers">Sneakers</option>
-          <option value="flats">Flats</option>
-          <option value="sandals">Sandals</option>
-          <option value="heels">Heels</option>
+          <option value="shoes">Shoes</option>
+          <option value="cosmetics">Cosmetics</option>
+          <option value="pants">Pants</option>
+          <option value="vegetable">Vegetables</option>
         </select>
       </div>
     </div>

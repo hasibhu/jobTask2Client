@@ -1,6 +1,7 @@
 import ProductsCard from "./ProductsCard";
 
 const Products = ({ products }) => {
+  
   return (
     <div className="grid lg:grid-cols-4 grid-cols-2 gap-1">
       {" "}

@@ -22,6 +22,7 @@ const Colors = ({ handleRadioChange }) => {
           title="Black"
           name="color"
         ></Input>
+        
         <Input
           handleRadioChange={handleRadioChange}
           value="blue"

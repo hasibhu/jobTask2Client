@@ -20,6 +20,7 @@ function App() {
   const [selectedPriceRange, setSelectedPriceRange] = useState(null);
   const [sortByDate, setSortByDate] = useState("");
   const [products, refetch, isLoading] = useAllProducts();
+
   const handleInputChange = (event) => {
     event.preventDefault();
     setQuery(event.target.value);
@@ -138,6 +139,7 @@ const filteredData = (products, selectedCategory, query, selectedPriceRange) => 
             />
             {/* Sorting Dropdown */}
             <div className="mb-4 flex space-x-4 flex-wrap justify-center items-center">
+              {/* price  */}
               <div>
                 <label className="mr-2">Sort by Price:</label>
                 <select onChange={handleSortChange} value={sortOrder}>
@@ -146,6 +148,7 @@ const filteredData = (products, selectedCategory, query, selectedPriceRange) => 
                   <option value="highToLow">Price: High to Low</option>
                 </select>
               </div>
+
               <div>
                 <label className="mr-2">Sort by Date:</label>
                 <select onChange={handleSortByDateChange} value={sortByDate}>

@@ -16,7 +16,7 @@ const useAllProducts = () => {
         staleTime: 1000 * 60 * 5, // Optional: Holds Cache data for 5 minutes
     });
 
-    return [products,  refetch];
+    return [products,  refetch, isLoading];
 }
 
 export default useAllProducts;

@@ -1,12 +1,14 @@
-import React from "react";
+
 import Button from "../components/Button";
 
 import CategoryDropdown from "../Sidebar/Category/CategoryDropdown";
 import PriceDropdown from '../Sidebar/Price/PriceDropdown'
 import ColorsDropdown from '../Sidebar/Colors/ColorsDropdown'
+import { useState } from "react";
 
 const Recommended = ({ handleClick, handleRadioChange }) => {
-  
+ 
+
   return (
     <div>
       <div className="flex flex-wrap justify-center items-center lg:gap-4 gap-2 m-2  ">

@@ -1,4 +1,4 @@
-# Job Task
+# Job Task: E-commerce Home Page Filter Functionalities
 ## Project Overview
 This is the frontend of a MERN stack single-page web application that allows users to search, filter, sort, and paginate through a list of products. The application also supports user authentication using Firebase (Google and Email/Password authentication).
 

@@ -1,52 +1,35 @@
-import Input from "../../components/Input";
+import { useProducts } from "../../hooks/ProductContext";
 
-const Colors = ({ handleRadioChange }) => {
+const Colors = () => {
+  const { setFilter } = useProducts();
+
+  const handleRadioChange = (event) => {
+    setFilter("color", event.target.value);
+  };
+
   return (
     <div>
-      <h1 className="text-2xl font-bold ">Colors</h1>
+      <h1 className="text-2xl font-bold">Colors</h1>
       <div className="flex flex-col">
         <label>
           <input
             onChange={handleRadioChange}
-            type="radio"
             value=""
+            type="radio"
             name="color"
-            id=""
           />
-          <span></span>All
+          All
         </label>
-
-        <Input
-          handleRadioChange={handleRadioChange}
-          value="black"
-          title="Black"
-          name="color"
-        ></Input>
-        
-        <Input
-          handleRadioChange={handleRadioChange}
-          value="blue"
-          title="Blue"
-          name="color"
-        ></Input>
-        <Input
-          handleRadioChange={handleRadioChange}
-          value="red"
-          title="Red"
-          name="color"
-        ></Input>
-        <Input
-          handleRadioChange={handleRadioChange}
-          value="green"
-          title="Green"
-          name="color"
-        ></Input>
-        <Input
-          handleRadioChange={handleRadioChange}
-          value="white"
-          title="White"
-          name="color"
-        ></Input>
+        <label>
+          <input
+            onChange={handleRadioChange}
+            value="Red"
+            type="radio"
+            name="color"
+          />
+          Red
+        </label>
+        {/* Add more colors as needed */}
       </div>
     </div>
   );

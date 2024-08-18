@@ -14,3 +14,4 @@ const Input = ({ handleRadioChange, value, title, name }) => {
 };
 
 export default Input;
+

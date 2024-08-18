@@ -1,10 +1,23 @@
-import React from "react";
-import Input from "../../components/Input";
+import React from 'react';
+import { useProducts } from "../../hooks/ProductContext";
 
-const Category = ({ handleRadioChange }) => {
+const Category = () => {
+  const { setFilter, isLoading, products } = useProducts(); // Access products for debugging
+
+  if (isLoading) {
+    return <div>Loading...</div>;
+  }
+
+  const handleRadioChange = (event) => {
+    const category = event.target.value;
+    setFilter(category);
+    console.log("Selected category:", category);
+    console.log("Filtered products:", products); // Debug output
+  };
+
   return (
-    <div className="mb-2">
-      <h1 className="text-2xl font-bold ">Category</h1>
+    <div>
+      <h1 className="text-2xl font-bold">Category</h1>
       <div className="flex flex-col">
         <label>
           <input
@@ -12,49 +25,45 @@ const Category = ({ handleRadioChange }) => {
             type="radio"
             value=""
             name="category"
-            id=""
           />
-          <span></span>All
+          All
         </label>
-
-        <Input
-          handleRadioChange={handleRadioChange}
-          value="shoes"
-          title="Shoes"
-          name="category"
-        ></Input>
-        
-{/* Cosmetics */}
-        <Input
-          handleRadioChange={handleRadioChange}
-          value="cosmetics"
-          title="Cosmetics"
-          name="category"
-        ></Input>
-
-        {/* Pants */}
-        <Input
-          handleRadioChange={handleRadioChange}
-          value="pants"
-          title="Pants"
-          name="category"
-        ></Input>
-
-        {/* Clothe
-        <Input
-          handleRadioChange={handleRadioChange}
-          value="clothes"
-          title="Clothes"
-          name="category"
-        ></Input> */}
-
-        {/* vegetable */}
-        <Input
-          handleRadioChange={handleRadioChange}
-          value="vegetable"
-          title="Vegetable"
-          name="category"
-        ></Input>
+        <label>
+          <input
+            onChange={handleRadioChange}
+            type="radio"
+            value="Shoes"
+            name="category"
+          />
+          Shoes
+        </label>
+        <label>
+          <input
+            onChange={handleRadioChange}
+            type="radio"
+            value="Cosmetics"
+            name="category"
+          />
+          Cosmetics
+        </label>
+        <label>
+          <input
+            onChange={handleRadioChange}
+            type="radio"
+            value="Pants"
+            name="category"
+          />
+          Pants
+        </label>
+        <label>
+          <input
+            onChange={handleRadioChange}
+            type="radio"
+            value="Vegetable"
+            name="category"
+          />
+          Vegetable
+        </label>
       </div>
     </div>
   );

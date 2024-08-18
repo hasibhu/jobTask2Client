@@ -1,22 +1,27 @@
-import { useQuery } from "@tanstack/react-query";
-import axios from "axios";
-
+// Example implementation of useAllProducts
+import { useState, useEffect } from 'react';
 
 const useAllProducts = () => {
+  const [products, setProducts] = useState([]);
+  const [isLoading, setIsLoading] = useState(true);
 
-    // using tanstack query 
-    const { data: products = [],  refetch, isLoading } = useQuery({
-        queryKey: ['users'],
-        queryFn: async () => {
-            await new Promise(resolve => setTimeout(resolve, 1500));
-            const { data } = await axios.get('https://ecommerce-server-sable-zeta.vercel.app/products');
-            // console.log(data);
-            return data;
-        },
-        staleTime: 1000 * 60 * 5, // Optional: Holds Cache data for 5 minutes
-    });
+  useEffect(() => {
+    const fetchProducts = async () => {
+      try {
+        const response = await fetch('http://localhost:5007/products'); // Adjust the API endpoint as needed
+        const data = await response.json();
+        setProducts(data); // Ensure this is an object with an allProducts property
+      } catch (error) {
+        console.error('Failed to fetch products:', error);
+      } finally {
+        setIsLoading(false);
+      }
+    };
 
-    return [products,  refetch, isLoading];
-}
+    fetchProducts();
+  }, []);
+
+  return [products, isLoading];
+};
 
 export default useAllProducts;

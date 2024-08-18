@@ -18,7 +18,7 @@ const Products = ({ products }) => {
       <div className="grid lg:grid-cols-4 grid-cols-2 gap-1">
         {products.map(product => (
           <ProductsCard
-            key={product.id} // Ensure `product.id` is a unique and stable key
+            key={product._id} // Ensure `product.id` is a unique and stable key
             {...product}
             onClick={() => openModal(product)}
           />

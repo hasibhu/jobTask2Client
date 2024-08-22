@@ -1,15 +1,21 @@
 
 import { AiFillStar } from "react-icons/ai";
 import { IoBagAdd } from "react-icons/io5";
+import { Link } from "react-router-dom";
 
-const ProductsCard = ({ img, title, description = '', start, reviews, prevPrice, newPrice, onClick }) => {
+
+const ProductsCard = ({ product }) => {
+  const { _id, category, color, company, description, img, newPrice, reviews, start, title } = product;
+  
+ 
+
   // Ensure description is a string and handle cases where it might be undefined
   const truncatedDescription = typeof description === 'string'
     ? description.split(" ").slice(0, 9).join(" ") + "..."
     : "Description not available";
-
+  
   return (
-    <div className="card bg-base-100 lg:w-62 shadow-xl">
+    <div  className="card bg-base-100 lg:w-62 shadow-xl">
       <figure>
         <img className="w-44 h-[155px]" src={img} alt={title} />
       </figure>
@@ -17,12 +23,17 @@ const ProductsCard = ({ img, title, description = '', start, reviews, prevPrice,
         <h2 className="card-title">{title}</h2>
         <div className="flex flex-col">
           <p className="mb-1">{truncatedDescription}</p>
+          <Link to={`/details/${ _id}`}>
           <button 
-            onClick={onClick} 
+            
             className="text-blue-500 underline hover:text-blue-700 transition ml-1 self-start"
           >
             See more
           </button>
+        </Link>
+
+       
+
         </div>
         <div className="flex items-center mt-2">
           {[...Array(start)].map((_, index) => (
@@ -34,7 +45,7 @@ const ProductsCard = ({ img, title, description = '', start, reviews, prevPrice,
         <div className="card-actions flex items-center justify-between mt-2">
           <div className="flex gap-1 items-center">
             <h1>Price: $</h1>
-            <del>{prevPrice}</del> {newPrice}
+            <del>{}</del> {newPrice}
           </div>
           <IoBagAdd className="text-3xl" />
         </div>

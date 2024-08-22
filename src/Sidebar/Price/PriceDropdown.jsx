@@ -11,10 +11,10 @@ const PriceDropdown = ({ handleRadioChange }) => {
           className="p-2 border rounded"
         >
           <option value="">All</option>
-          <option value={50}>$0-$50</option>
-          <option value={100}>$51-$100</option>
-          <option value={150}>$101-$150</option>
-          <option value={200}>Over $150</option>
+          <option value= "[0,50]">$0-$50</option>
+          <option value= "[51,100]">$51-$100</option>
+          <option value= "[101,150]">$101-$150</option>
+          <option value= "[151,2000000]">Over $150</option>
         </select>
       </div>
     </div>

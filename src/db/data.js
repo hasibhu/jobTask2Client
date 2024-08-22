@@ -10,7 +10,8 @@
 //     "newPrice": 150,
 //     "company": "Puma",
 //     "color": "red",
-//     "category": "shoes"
+//     "category": "shoes",
+//     "date": "2024-23-14T10:15:00"
 //   },
 //   {
 //     "img": "https://m.media-amazon.com/images/I/6125yAfsJKL._AC_UX575_.jpg",
@@ -22,7 +23,8 @@
 //     "newPrice": 135,
 //     "company": "Nike",
 //     "color": "white",
-//     "category": "shoes"
+//     "category": "shoes",
+//     "date": "2024-22-14T10:15:00"
 //   },
 //   {
 //     "img": "https://m.media-amazon.com/images/I/71vYQ546zAL._SL1155_.jpg",
@@ -34,7 +36,8 @@
 //     "newPrice": 35,
 //     "company": "NYX",
 //     "color": "brown",
-//     "category": "cosmetics"
+//     "category": "cosmetics",
+//     "date": "2024-04-14T10:15:00"
 //   },
 //   {
 //     "img": "https://m.media-amazon.com/images/I/7135DSnMj+L._SL1500_.jpg",
@@ -46,7 +49,8 @@
 //     "newPrice": 15,
 //     "company": "NYX",
 //     "color": "white",
-//     "category": "cosmetics"
+//     "category": "cosmetics",
+//     "date": "2024-06-14T10:15:00"
 //   },
 //   {
 //     "img": "https://m.media-amazon.com/images/I/71C7E6L-d4L._SL1500_.jpg",
@@ -58,7 +62,8 @@
 //     "newPrice": 5,
 //     "company": "NYX",
 //     "color": "white",
-//     "category": "cosmetics"
+//     "category": "cosmetics",
+//     "date": "2024-08-14T10:15:00"
 //   },
 //   {
 //     "img": "https://m.media-amazon.com/images/I/81kj3O-1ylL._AC_SX425_.jpg",
@@ -70,7 +75,8 @@
 //     "newPrice": 55,
 //     "company": "Fusion",
 //     "color": "black",
-//     "category": "pants"
+//     "category": "pants",
+//     "date": "2024-07-14T10:15:00"
 //   },
 //   {
 //     "img": "https://m.media-amazon.com/images/I/812bxziO2YL._AC_SL1500_.jpg",
@@ -82,7 +88,8 @@
 //     "newPrice": 12,
 //     "company": "Seed King",
 //     "color": "red",
-//     "category": "vegetable"
+//     "category": "vegetable",
+//     "date": "2024-09-14T10:15:00"
 //   },
 //   {
 //     "img": "https://m.media-amazon.com/images/I/71kZzmsx9QL._SL1500_.jpg",
@@ -94,7 +101,8 @@
 //     "newPrice": 12,
 //     "company": "Seed King",
 //     "color": "red",
-//     "category": "vegetable"
+//     "category": "vegetable",
+//     "date": "2024-10-14T10:15:00"
 //   },
 //   {
 //     "img": "https://m.media-amazon.com/images/I/4148hjLiTEL.jpg",
@@ -106,7 +114,8 @@
 //     "newPrice": 12,
 //     "company": "Seed King",
 //     "color": "white",
-//     "category": "vegetable"
+//     "category": "vegetable",
+//     "date": "2024-12-14T10:15:00"
 //   },
 //   {
 //     "img": "https://m.media-amazon.com/images/I/912QbpGZCwL._AC_SL1500_.jpg",
@@ -118,7 +127,8 @@
 //     "newPrice": 62,
 //     "company": "Seed King",
 //     "color": "black",
-//     "category": "vegetable"
+//     "category": "vegetable",
+//     "date": "2024-11-14T10:15:00"
 //   },
 //   {
 //     "img": "https://m.media-amazon.com/images/I/519MRhRKGFL._AC_UX575_.jpg",
@@ -130,7 +140,8 @@
 //     "newPrice": 100,
 //     "company": "Nike",
 //     "color": "red",
-//     "category": "shoes"
+//     "category": "shoes",
+//     "date": "2024-13-14T10:15:00"
 //   },
 //   {
 //     "img": "https://m.media-amazon.com/images/I/51e+B9l18QL._AC_SX535_.jpg",
@@ -142,7 +153,8 @@
 //     "newPrice": 100,
 //     "company": "Nike",
 //     "color": "red",
-//     "category": "shoes"
+//     "category": "shoes",
+//     "date": "2024-14-14T10:15:00"
 //   },
 //   {
 //     "img": "https://m.media-amazon.com/images/I/51+P9uAvb1L._AC_UY695_.jpg",
@@ -154,7 +166,8 @@
 //     "newPrice": 200,
 //     "company": "Nike",
 //     "color": "green",
-//     "category": "shoes"
+//     "category": "shoes",
+//     "date": "2024-15-14T10:15:00"
 //   },
 //   {
 //     "img": "https://m.media-amazon.com/images/I/71oEKkghg-L._AC_UX575_.jpg",
@@ -166,7 +179,8 @@
 //     "newPrice": 90,
 //     "company": "Adidas",
 //     "color": "black",
-//     "category": "shoes"
+//     "category": "shoes",
+//     "date": "2024-16-14T10:15:00"
 //   },
 //   {
 //     "img": "https://m.media-amazon.com/images/I/41M54ztS6IL._AC_SY625._SX._UX._SY._UY_.jpg",
@@ -178,7 +192,8 @@
 //     "newPrice": 200,
 //     "company": "Vans",
 //     "color": "green",
-//     "category": "shoes"
+//     "category": "shoes",
+//     "date": "2024-17-14T10:15:00"
 //   },
 //   {
 //     "img": "https://m.media-amazon.com/images/I/71zKuNICJAL._AC_UX625_.jpg",
@@ -190,7 +205,8 @@
 //     "newPrice": 50,
 //     "company": "Adidas",
 //     "color": "black",
-//     "category": "shoes"
+//     "category": "shoes",
+//     "date": "2024-18-14T10:15:00"
 //   },
 //   {
 //     "img": "https://m.media-amazon.com/images/I/71pZKVl6cQL._AC_SX425_.jpg",
@@ -202,7 +218,8 @@
 //     "newPrice": 135,
 //     "company": "Fusion",
 //     "color": "brown",
-//     "category": "pants"
+//     "category": "pants",
+//     "date": "2024-19-14T10:15:00"
 //   },
 //   {
 //     "img": "https://m.media-amazon.com/images/I/61V9APfz97L._AC_UY695_.jpg",
@@ -214,7 +231,8 @@
 //     "newPrice": 50,
 //     "company": "Vans",
 //     "color": "white",
-//     "category": "shoes"
+//     "category": "shoes",
+//     "date": "2024-20-14T10:15:00"
 //   },
 //   {
 //     "img": "https://m.media-amazon.com/images/I/71VaQ+V6XnL._AC_UY695_.jpg",
@@ -226,7 +244,8 @@
 //     "newPrice": 120,
 //     "company": "Nike",
 //     "color": "green",
-//     "category": "shoes"
+//     "category": "shoes",
+//     "date": "2024-21-14T10:15:00"
 //   },
 //   {
 //     "img": "https://m.media-amazon.com/images/I/61-cBsLhJHL._AC_UY695_.jpg",
@@ -238,7 +257,8 @@
 //     "newPrice": 110,
 //     "company": "Adidas",
 //     "color": "blue",
-//     "category": "shoes"
+//     "category": "shoes",
+//     "date": "2024-22-14T10:15:00"
 //   },
 //   {
 //     "img": "https://m.media-amazon.com/images/I/81xXDjojYKS._AC_UX575_.jpg",
@@ -250,7 +270,8 @@
 //     "newPrice": 130,
 //     "company": "Puma",
 //     "color": "green",
-//     "category": "shoes"
+//     "category": "shoes",
+//     "date": "2024-23-14T10:15:00"
 //   },
 //   {
 //     "img": "https://m.media-amazon.com/images/I/71jeoX0rMBL._AC_UX575_.jpg",
@@ -262,7 +283,8 @@
 //     "newPrice": 150,
 //     "company": "Puma",
 //     "color": "black",
-//     "category": "shoes"
+//     "category": "shoes",
+//     "date": "2024-24-14T10:15:00"
 //   },
 //   {
 //     "img": "https://m.media-amazon.com/images/I/61TM6Q9dvxL._AC_UX575_.jpg",
@@ -274,7 +296,8 @@
 //     "newPrice": 150,
 //     "company": "Puma",
 //     "color": "white",
-//     "category": "shoes"
+//     "category": "shoes",
+//     "date": "2024-25-14T10:15:00"
 //   },
 //   {
 //     "img": "https://m.media-amazon.com/images/I/7128-af7joL._AC_UY575_.jpg",
@@ -286,7 +309,8 @@
 //     "newPrice": 150,
 //     "company": "Puma",
 //     "color": "black",
-//     "category": "shoes"
+//     "category": "shoes",
+//     "date": "2024-26-14T10:15:00"
 //   },
 //   {
 //     "img": "https://m.media-amazon.com/images/I/81xXDjojYKS._AC_UX575_.jpg",
@@ -298,7 +322,8 @@
 //     "newPrice": 90,
 //     "company": "Puma",
 //     "color": "green",
-//     "category": "shoes"
+//     "category": "shoes",
+//     "date": "2024-27-14T10:15:00"
 //   },
 //   {
 //     "img": "https://m.media-amazon.com/images/I/719gdz8lsTS._AC_UX575_.jpg",
@@ -310,7 +335,8 @@
 //     "newPrice": 150,
 //     "company": "Vans",
 //     "color": "red",
-//     "category": "shoes"
+//     "category": "shoes",
+//     "date": "2024-28-14T10:15:00"
 //   },
 //   {
 //     "img": "https://m.media-amazon.com/images/I/71gpFHJlnoL._AC_UX575_.jpg",
@@ -322,7 +348,8 @@
 //     "newPrice": 110,
 //     "company": "Vans",
 //     "color": "white",
-//     "category": "shoes"
+//     "category": "shoes",
+//     "date": "2024-29-14T10:15:00"
 //   },
 //   {
 //     "img": "https://m.media-amazon.com/images/I/71pf7VFs9CL._AC_UX575_.jpg",
@@ -334,7 +361,8 @@
 //     "newPrice": 100,
 //     "company": "Vans",
 //     "color": "blue",
-//     "category": "shoes"
+//     "category": "shoes",
+//     "date": "2024-30-14T10:15:00"
 //   },
 //   {
 //     "img": "https://m.media-amazon.com/images/I/61N4GyWcHPL._AC_UY575_.jpg",
@@ -346,7 +374,8 @@
 //     "newPrice": 40,
 //     "company": "Nike",
 //     "color": "black",
-//     "category": "shoes"
+//     "category": "shoes",
+//     "date": "2024-31-14T10:15:00"
 //   },
 //   {
 //     "img": "https://m.media-amazon.com/images/I/61bncQ44yML._AC_UX695_.jpg",
@@ -358,7 +387,8 @@
 //     "newPrice": 35,
 //     "company": "Vans",
 //     "color": "black",
-//     "category": "shoes"
+//     "category": "shoes",
+//     "date": "2024-01-14T10:15:00"
 //   },
 //   {
 //     "img": "https://m.media-amazon.com/images/I/71czu7WgGuL._AC_UY695_.jpg",
@@ -370,7 +400,8 @@
 //     "newPrice": 20,
 //     "company": "Puma",
 //     "color": "black",
-//     "category": "shoes"
+//     "category": "shoes",
+//     "date": "2024-02-14T10:15:00"
 //   },
 //   {
 //     "img": "https://m.media-amazon.com/images/I/510S1B29wCL._AC_SY550_.jpg",
@@ -382,7 +413,8 @@
 //     "newPrice": 55,
 //     "company": "Fusion",
 //     "color": "jeans",
-//     "category": "pants"
+//     "category": "pants",
+//     "date": "2024-03-14T10:15:00"
 //   },
 //   {
 //     "img": "https://m.media-amazon.com/images/I/61men05KRxL._AC_UY625_.jpg",
@@ -394,7 +426,8 @@
 //     "newPrice": 150,
 //     "company": "Nike",
 //     "color": "red",
-//     "category": "shoes"
+//     "category": "shoes",
+//     "date": "2024-04-14T10:15:00"
 //   },
 //   {
 //     "img": "https://m.media-amazon.com/images/I/519MRhRKGFL._AC_UX575_.jpg",
@@ -406,7 +439,8 @@
 //     "newPrice": 200,
 //     "company": "Nike",
 //     "color": "red",
-//     "category": "shoes"
+//     "category": "shoes",
+//     "date": "2024-05-14T10:15:00"
 //   },
 //   {
 //     "img": "https://m.media-amazon.com/images/I/51PGWTXgf-L._AC_UY625_.jpg",
@@ -418,7 +452,8 @@
 //     "newPrice": 200,
 //     "company": "Nike",
 //     "color": "black",
-//     "category": "shoes"
+//     "category": "shoes",
+//     "date": "2024-06-14T10:15:00"
 //   },
 //   {
 //     "img": "https://m.media-amazon.com/images/I/71kDnFxCEkL._SL1500_.jpg",
@@ -430,7 +465,8 @@
 //     "newPrice": 15,
 //     "company": "NYX",
 //     "color": "red",
-//     "category": "cosmetics"
+//     "category": "cosmetics",
+//     "date": "2024-07-14T10:15:00"
 //   },
 //   {
 //     "img": "https://m.media-amazon.com/images/I/616sA5XUKtL._AC_UY675_.jpg",
@@ -442,7 +478,8 @@
 //     "newPrice": 50,
 //     "company": "Adidas",
 //     "color": "black",
-//     "category": "shoes"
+//     "category": "shoes",
+//     "date": "2024-08-14T10:15:00"
 //   },
 //   {
 //     "img": "https://m.media-amazon.com/images/I/71h5+MbEK7L._AC_UY625_.jpg",
@@ -454,7 +491,8 @@
 //     "newPrice": 150,
 //     "company": "Adidas",
 //     "color": "white",
-//     "category": "shoes"
+//     "category": "shoes",
+//     "date": "2024-23-14T10:15:00"
 //   },
 //   {
 //     "img": "https://m.media-amazon.com/images/I/61uw5RDxKQL._AC_UY625_.jpg",
@@ -466,7 +504,8 @@
 //     "newPrice": 50,
 //     "company": "Adidas",
 //     "color": "black",
-//     "category": "shoes"
+//     "category": "shoes",
+//     "date": "2024-18-14T10:15:00"
 //   },
 //   {
 //     "img": "https://m.media-amazon.com/images/I/51-iAP5RDLL._AC_SY500_.jpg",
@@ -478,7 +517,8 @@
 //     "newPrice": 50,
 //     "company": "Adidas",
 //     "color": "black",
-//     "category": "shoes"
+//     "category": "shoes",
+//     "date": "2024-04-14T10:15:00"
 //   },
 //     {
 //     "img": "https://m.media-amazon.com/images/I/71kDnFxCEkL._SL1500_.jpg",
@@ -490,7 +530,8 @@
 //     "newPrice": 15,
 //     "company": "NYX",
 //     "color": "red",
-//     "category": "cosmetics"
+//     "category": "cosmetics",
+//     "date": "2024-08-14T10:15:00"
 //   }
 // ]
 

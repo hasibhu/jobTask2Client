@@ -1,7 +1,37 @@
 
+import { useContext, useEffect, useState } from "react";
 import Login from "./Login";
+import { AuthContext } from "../Provider/AuthProvider";
+import Swal from "sweetalert2";
 
-const Navbar = ({ handleInputChange, query }) => {
+const Navbar = () => {
+  const [searchValue, setSearchValue] = useState()
+  const {setProducts} = useContext(AuthContext)
+
+  const handleSearch = async () => {
+    if (!searchValue) return;
+
+    try {
+      const res = await fetch(`https://ecommerce-server-sable-zeta.vercel.app/search?query=${searchValue}`);
+
+      const data = await res.json();
+      setProducts(data);
+      // console.log(data);
+    } catch (error) {
+      Swal.fire({
+        icon: "error",
+        title: "Oops...",
+        text: error.message,
+      });
+    }
+  };
+
+ 
+  
+
+  
+
+
   return (
       <div className=" bg-blue-400 p-3 rounded-lg">
         <div className="flex justify-center items-center pb-2 lg:hidden sm:block">
@@ -17,11 +47,12 @@ const Navbar = ({ handleInputChange, query }) => {
         </div>
           <div>
             <input
-              onChange={handleInputChange}
+              onChange={(e)=>setSearchValue(e.target.value)}
               type="text"
               placeholder="Search here..."
-              className="rounded-xl p-2 outline outline-red-600"
+              className="rounded-l-xl p-2 outline outline-red-600"
             />
+            <button className="rounded-r-xl p-3 bg-[#EE4144] text-white  outline-red-600" onClick = {handleSearch}>search</button>
           </div>
 
           <div className="ml-3">

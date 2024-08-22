@@ -1,24 +1,12 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Navbar from "./Navigation/Navbar";
 import Recommended from "./Recommended/Recommended";
 import Sidebar from "./Sidebar/Sidebar";
+// import products from "./db/data"; // Assuming products are ordered by oldest to newest
 import Products from "./Products/Products";
 import Footer from "./Footer/Footer";
-import { useProducts } from "./hooks/ProductContext";
 
 function App() {
-  const { products, isLoading } = useProducts();
-  const [currentPage, setCurrentPage] = useState(1);
-  const [productsPerPage, setProductsPerPage] = useState(12);
-
-  const indexOfLastProduct = currentPage * productsPerPage;
-  const indexOfFirstProduct = indexOfLastProduct - productsPerPage;
-  const currentProducts = products.slice(indexOfFirstProduct, indexOfLastProduct);
-
-  const loadMoreProducts = () => {
-    setProductsPerPage((prevProductsPerPage) => prevProductsPerPage + 4);
-  };
-
   return (
     <div className="m-2 lg:mx-auto lg:max-w-screen-xl p-5 bg-slate-300">
       <div className="lg:flex">
@@ -32,17 +20,7 @@ function App() {
           <Navbar />
           <div className="overflow-y-auto h-[calc(100vh-4rem)] p-2">
             <Recommended />
-            <Products products={currentProducts} />
-            {products.length > indexOfLastProduct && (
-              <div className="flex justify-center items-center ">
-                <button
-                  onClick={loadMoreProducts}
-                  className="mt-4 p-2 bg-purple-700 text-white rounded"
-                >
-                  See More
-                </button>
-              </div>
-            )}
+            <Products />
           </div>
         </div>
       </div>
